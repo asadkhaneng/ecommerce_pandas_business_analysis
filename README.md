@@ -1,39 +1,88 @@
-# E-Commerce Business Insights Analysis 📊
+# 🛒 Olist E-Commerce Business Analysis with Pandas
 
-Welcome to the ecommerce_panda_business_analysis project! This repository contains a comprehensive data analysis of Brazilian E-Commerce data, uncovering key business performance indicators, customer behavior, and product trends using Python and the Pandas ecosystem.
+A complete data analysis project exploring the **Olist Brazilian E-Commerce Dataset** — from raw data validation to business-ready insights, built entirely with **pandas** and **Python**.
 
-## 🎯 Project Overview
-This project transforms raw transactional data into actionable business intelligence. By integrating multiple datasets, we have mapped the end-to-end customer journey—from order placement and payment to delivery and final customer satisfaction.
+---
 
-## 🔍 Key Analysis Pillars
-Our analysis dives deep into:
+## 📌 Project Overview
 
-Revenue & Sales Performance: Identifying top-performing categories and seasonal sales trends.
-Customer Segmentation: Analyzing purchase frequency, geographic distribution, and customer retention metrics.
-Logistics & Freight Efficiency: Calculating delivery times and analyzing the impact of freight costs on order volume.
-Customer Satisfaction: Correlating review scores with delivery times and product categories.
+This project simulates a real-world data analyst workflow: taking eight raw, messy business tables and turning them into a trustworthy analytical model that answers real commercial questions — sales performance, customer retention, delivery performance, seller quality, and executive-level reporting.
 
-## 🛠 Tech Stack
-Language: Python 3.x
-Data Manipulation: Pandas, NumPy
-Visualization: Matplotlib, Seaborn
-Environment: Jupyter Notebooks / Google Colab
+The analysis is organized into **60 structured exercises across 8 business phases**, moving from data discovery all the way to decision-ready outputs.
 
-## 📈 Key Findings (Preview)
-Insert a key insight here, e.g., "Identified that categories like 'Bed_Bath_Table' dominate total sales volume."
-Insert a key insight here, e.g., "Discovered a strong correlation between delivery speed and customer review scores."
+---
 
-## 📁 Dataset Structure
-This analysis relies on an integrated relational database structure:
+## 🗂️ Dataset
 
-olist_customers_dataset: Customer demographics and location data.
-olist_orders_dataset: Order status, timestamps, and order history.
-olist_order_items_dataset: Line-item details, pricing, and seller information.
-olist_order_payments_dataset: Payment methods, installments, and transaction values.
-product_category_name_translation: English-translated product taxonomy.
+The [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) contains real, anonymized commercial data from over 100,000 orders made at Olist Store between 2016–2018, across multiple marketplaces in Brazil.
 
-## 🚀 Getting Started
-Clone the repository: git clone https://github.com/your-username/ecommerce_panda_business_analysis.git
-Install requirements: pip install pandas numpy matplotlib seaborn
-Run the analysis: Open the ecommerce_panda_business_analysis.ipynb notebook to reproduce the results.
-Created for the E-Commerce Data Analytics Portfolio.
+**8 relational tables used:**
+| Table | Description |
+|---|---|
+| `olist_customers_dataset.csv` | Customer location & identifiers |
+| `olist_orders_dataset.csv` | Order status & delivery timestamps |
+| `olist_order_items_dataset.csv` | Items, price & freight per order |
+| `olist_order_payments_dataset.csv` | Payment method & installments |
+| `olist_order_reviews_dataset.csv` | Customer review scores & comments |
+| `olist_products_dataset.csv` | Product attributes & category |
+| `olist_sellers_dataset.csv` | Seller location & identifiers |
+| `product_category_name_translation.csv` | Category name → English mapping |
+
+---
+
+## 🧭 Analysis Roadmap
+
+| Phase | Focus |
+|---|---|
+| **1. Data Portfolio & Framing** | Inventory tables, define grain, map relationships, trace real order journeys |
+| **2. Data Quality & Governance** | Time coverage, health dashboard, primary/foreign key reliability |
+| **3. Analytical Data Model** | Merges, decision-ready features, engineered metrics |
+| **4. Commercial Performance** | Revenue, category economics, pricing & freight analysis |
+| **5. Customer & Retention Strategy** | RFM segmentation, repeat purchase behavior, market strategy |
+| **6. Fulfilment & Satisfaction** | Delivery performance, seller scorecards, review analysis |
+| **7. Planning & Scenarios** | Forecasting, what-if business scenarios, management decisions |
+| **8. Executive Communication** | Summary KPIs and stakeholder-ready outputs |
+
+---
+
+## 🛠️ Tools & Skills Applied
+
+- **Python & pandas** — data cleaning, merging, grouping, pivoting, feature engineering
+- **NumPy** — numerical operations & array-based logic
+- **Data validation** — primary key testing, foreign key coverage, duplicate & null audits
+- **Business analytics** — RFM analysis, cohort thinking, KPI design
+- **Matplotlib** — visual storytelling for trends and comparisons
+
+---
+
+## 📊 Key Skills Demonstrated
+
+✅ Diagnosing data quality issues before trusting any analysis  
+✅ Correctly handling one-to-many relationships to avoid double-counting  
+✅ Turning raw transactional data into business-ready decision metrics  
+✅ Translating pandas outputs into plain-language business insights  
+
+---
+
+## 📁 Repository Structure
+
+├── olist_ecommerce_pandas_business_analysis.ipynb   # Full analysis notebook (60 exercises)
+├── olist_customers_dataset.csv
+├── olist_orders_dataset.csv
+├── olist_order_items_dataset.csv
+├── olist_order_payments_dataset.csv
+├── olist_order_reviews_dataset.csv
+├── olist_products_dataset.csv
+├── olist_sellers_dataset.csv
+├── product_category_name_translation.csv
+└── README.md
+
+# Project overview
+
+> 📎 The raw dataset (8 CSV files) is included in this repository. Original source: [Kaggle — Olist Brazilian E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+
+---
+
+## 🚀 About This Project
+
+This notebook was completed as a structured learning exercise in applied business analytics using pandas — bridging the gap between technical data manipulation and real commercial decision-making.
